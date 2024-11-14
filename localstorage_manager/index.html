@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kristel Saraci">
+    <meta name="description" content="Local Storage Manager program">
+
+    <title>My Local Storage Manager</title>
+
+    <style>
+        #PlayArea {
+            border: 1px dotted blue;
+            padding: 6px;
+            background-color: #ccc;
+            margin-right: 50%;
+        }
+        .details {
+            border: 1px solid red;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body onload="doShowAll()">
+    <h3>Local Storage Manager</h3>
+    <div id="PlayArea">
+        <form id="ShoppingList">
+            <table>
+                <tr>
+                    <td>Name: <input type="text" name="name" /></td>
+                    <td>Value: <input type="text" name="data" /></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="button" value="Save" onclick="SaveItem()">
+                        <input type="button" value="Load/Modify" onclick="ModifyItem()">
+                        <input type="button" id="removeBtn" value="Remove" onclick="RemoveItem()">
+                        <input type="button" value="Clear All" onclick="ClearAll()">
+                    </td>
+                </tr>
+            </table>
+            <h4>Current localStorage</h4>
+            <table id="list" class="details" border="1" cellpadding="5px"></table>
+        </form>
+    </div>
+
+    <script>
+        function CheckBrowser() {
+            if ("localStorage" in window && window["localStorage"] !== null) {
+                return true; // Browser supports localStorage
+            } else {
+                alert("Sorry, your browser does not support local storage.");
+                return false; // Browser does not support localStorage
+            }
+        }
+
+        function doShowAll() { 
+            if (CheckBrowser()) {
+                let list = "<tr><th>Name</th><th>Value</th></tr>\n";
+                for (let i = 0; i < localStorage.length; i++) {
+                    let key = localStorage.key(i);
+                    list += "<tr><td>" + key + "</td><td>" + localStorage.getItem(key) + "</td></tr>\n";
+                }
+                if (list === "<tr><th>Name</th><th>Value</th></tr>\n") {
+                    list += "<tr><td>empty</td><td>empty</td></tr>\n";
+                }
+                document.getElementById("list").innerHTML = list;
+            }
+        }
+
+        function SaveItem() {
+            let name = document.forms.ShoppingList.name.value;
+            let data = document.forms.ShoppingList.data.value;
+            if (name && data) {
+                localStorage.setItem(name, data);
+                doShowAll();
+            } else {
+                alert("Both name and value are required.");
+            }
+        }
+
+        function ModifyItem() {
+            let name = document.forms.ShoppingList.name.value;
+            if (name && localStorage.getItem(name) !== null) {
+                document.forms.ShoppingList.data.value = localStorage.getItem(name);
+                doShowAll();
+            } else {
+                alert("Item not found.");
+            }
+        }
+
+        function RemoveItem() {
+            let name = document.forms.ShoppingList.name.value;
+            if (name && localStorage.getItem(name) !== null) {
+                localStorage.removeItem(name);
+                document.forms.ShoppingList.data.value = "";
+                doShowAll();
+            } else {
+                alert("Item not found.");
+            }
+        }
+
+        function ClearAll() {
+            localStorage.clear();
+            doShowAll();
+        }
+    </script>
+</body>
+</html>

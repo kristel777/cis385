@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Table Layout - London</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Kristel Saraci">
+        <meta name="description" content="HTML Table layout-City Gallery, London">
+        <style>
+            body {
+                margin:0;
+                font-family: Arial, sans-serif;
+                height: 100vh;
+            }
+            table {
+                width: 100%;
+                height: 100vh;
+                border-collapse: collapse;
+                table-layout: fixed;
+            }
+            td {
+                vertical-align: top;
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            #header, #footer {
+                background-color: rgb(250, 212, 238);
+                color: rgb(1, 0, 0);
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            #footer {
+                background-color: rgb(246, 190, 232);
+            }
+            #nav {
+                background-color: #eeeeee;
+                height: 200vh;
+                width: 200px;
+                float: left;
+                padding: 0; 
+                box-sizing: border-box;
+                font-size: 0.9em;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                margin-left: 20px;
+            }
+            #content {
+                width: 60%; 
+                padding: 0; 
+                margin: 0;
+                text-align: justify;
+                align-content: right;
+                box-sizing: border-box;
+                
+                
+                
+            }
+            #image-section {
+                width: 25%;
+                padding: 25px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            #image-section img {
+                max-width: 100%;
+                height: 100hv;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td id="header" colspan="3">
+                    <h1>City Gallery</h1>
+                    <h2>London</h2>
+                </td>
+            </tr>
+            <tr>
+                <td id="nav">
+                    <h2><a href="index.html">Main</a></h2>
+                    <h2><a href="layout_table_paris.html">Table Layout - Paris</a></h2>
+                    <h2><a href="layout_table_tokyo.html">Table Layout - Tokyo</a></h2>
+                </td>
+                <td id="content">
+                    <h3>London</h3>
+                    <p>London is the capital and largest city of both England and the United Kingdom, with a population of 8,866,180 in 2022. The wider metropolitan area is the largest in Western Europe, with a population of 14.9 million. London stands on the River Thames in southeast England, at the head of a 50-mile (80 km) estuary down to the North Sea, and has been a major settlement for nearly 2,000 years. Its ancient core and financial centre, the City of London, was founded by the Romans as Londinium and has retained its medieval boundaries. The City of Westminster, to the west of the City of London, has been the centuries-long host of the national government and parliament. London grew rapidly in the 19th century, becoming the world's largest city at the time. Since the 19th century, the name "London" has referred to the metropolis around the City of London, historically split between the counties of Middlesex, Essex, Surrey, Kent, and Hertfordshire, which since 1965 has largely comprised the administrative area of Greater London, governed by 33 local authorities and the Greater London AuthorityAs one of the world's major global cities,London exerts a strong influence on world art, entertainment, fashion, commerce, finance, education, healthcare, media, science, technology, tourism, transport, and communications. Despite a post-Brexit exodus of stock listings from the London Stock Exchange, London remains Europe's most economically powerful city and one of the world's major financial centres.</p>
+                </td>
+                <td id="image-section">
+                    <img src="picture_of_paris.jpg" alt="Image of Paris"/>
+                </td>
+            </tr>
+            <tr>
+                <td id="footer" colspan="3">
+                    Kristel Saraci, September 2024.
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
+

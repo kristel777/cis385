@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Layout - Paris</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 0.1">
+        <meta name="author" content="=Kristel Saraci">
+        <meta name="description" content ="HTML5 layout-City Gallery, Paris">
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+            header, footer {
+                background-color: rgb(250, 212, 238);
+                color: rgb(1, 0, 0);
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+            }
+            footer {
+                background-color: rgb(246, 190, 232);
+            }
+            #container {
+                display: flex;
+                padding: 20px;
+                justify-content: space-between;
+                height: 100vh;
+            }
+            nav {
+                width: 20%;
+                background-color: #eeeeee;
+                padding: 10px;
+                box-sizing: border-box;
+                font-size: 0.9em; /* Smaller font size for navigation */
+            }
+            article {
+                width: 55%;
+                padding: 10px 20px;
+                text-align: justify;
+                box-sizing: border-box;
+                font-size: 0.9em; /* Smaller font size for content */
+            }
+            section {
+                width: 50%;
+                padding: 20px;
+                text-align: center;
+            }
+            section img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>City Gallery</h1>
+            <h2>Paris</h2>
+        </header>
+
+        <div id="container">
+            <nav>
+                <h2><a href="index.html">Main</a></h2>
+                <h2><a href="layout_html5_london.html">HTML5 Layout - London</a></h2>
+                <h2><a href="layout_html5_tokyo.html">HTML5 Layout - Tokyo</a></h2>
+            </nav>
+
+            <article>
+                <h3>Paris</h3>
+                <p> Paris is the capital and largest city of France. With an official estimated population of 2,102,650 residents in January 2023 in an area of more than 105 km2 (41 sq mi), Paris is the fourth-largest city in the European Union and the 30th most densely populated city in the world in 2022. Since the 17th century, Paris has been one of the world's major centres of finance, diplomacy, commerce, culture, fashion, and gastronomy. For its leading role in the arts and sciences, as well as its early and extensive system of street lighting, in the 19th century, it became known as the City of Light.
+                    The City of Paris is the centre of the Île-de-France region, or Paris Region, with an official estimated population of 12,271,794 inhabitants in January 2023, or about 19% of the population of France. The Paris Region had a GDP of €765 billion (US$1.064 trillion, PPP) in 2021, the highest in the European Union. According to the Economist Intelligence Unit Worldwide Cost of Living Survey, in 2022, Paris was the city with the ninth-highest cost of living in the world.   </p>
+        </article>
+
+            <section>
+                <img src="picture_of_paris.jpg" alt="Image of Paris"/>
+            </section>
+        </div>
+
+        <footer>
+            Kristel Saraci, September 2024.
+        </footer>
+    </body>
+</html>

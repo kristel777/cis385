@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kristel Saraci">
+    <meta name="description" content="Tables 1">
+    <title>Tables 1 - Kristel Saraci</title>
+</head>
+
+<body>
+    <h1>Tables 1 - Kristel Saraci</h1>
+    
+    <ul style="background-color: #e6e6e6; padding: 15px; border-radius: 8px;">
+        <li><a href="index.html">Main page</a></li>
+    </ul>
+
+    <ol style="background-color: #e6e6e6; padding: 15px; border-radius: 8px;">
+        <li><a href="https://www.cuny.edu">City University of New York</a></li>
+        <li><a href="https://www.bmcc.cuny.edu">Borough of Manhattan Community College</a></li>
+        <li><a href="https://www.citytech.cuny.edu/">City Tech</a></li>
+    </ol>
+    
+    <ul style="background-color: #e6e6e6; padding: 15px; border-radius: 8px;">
+        <li><a href="https://www.wsj.com/">The Wall Street Journal</a></li>
+        <li><a href="https://www.yahoo.com/author/yahoo--finance/">Yahoo Finance</a></li>
+    </ul>
+
+    <p>This exercise demonstrates several features of HTML tables. The first three tables demonstrate basic table structure, including cellpadding, cellspacing, borders, and captions.</p>
+
+    <table border="1">
+        <caption align="bottom"><strong>Table 1:</strong><br>5x5 (border="1")</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table border="1" cellpadding="15">
+        <caption><strong>Table 2:</strong><br />A table with cellpadding="15"</caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table border="25" cellspacing="15">
+        <caption align="bottom"><strong>Table 3:</strong><br />A table with cellspacing="15" and border="25"</caption>
+        <tr>
+            <td>This</td>
+            <td>table</td>
+            <td>has</td>
+            <td>cellspacing="15"</td>
+            <td>&border="25"</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <p>Table 4 demonstrates an invisible table with border="0" and also the use of table headings.</p>
+
+    <div style="text-align: center;">
+        <h3>Animal Names in English and Spanish</h3>
+        <table border="0" cellpadding="10">
+            <caption align="bottom">
+                <strong>Table 4:</strong><br />Invisible table (border="0") and use of table heading tags.
+            </caption>
+            <tr>
+                <th>English</th>
+                <th>Cat</th>
+                <th>Dog</th>
+                <th>Giraffe</th>
+                <th>Parasite</th>
+            </tr>
+            <tr>
+                <th>Image</th>
+                <td><img src="cat.jpeg" alt="Cat Image" width="200" height="200"></td>
+                <td><img src="dog.jpeg" alt="Dog Image" width="200" height="200"></td>
+                <td><img src="giraffe.jpeg" alt="Giraffe Image" width="200" height="200"></td>
+                <td><img src="parasite.jpeg" alt="Parasite Image" width="200" height="200"></td>
+            </tr>
+            <tr>
+                <th>Español</th>
+                <th>Gato</th>
+                <th>Perro</th>
+                <th>Jirafa</th>
+                <th>Parásito</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>&nbsp;</div>
+
+    <p>The next four tables demonstrate the use of the width attribute, and the difference between fixed width tables that use the absolute unit of pixels, and variable width tables that use the relative unit of percent (%).</p>
+
+    <table border="1" cellpadding="10" width="500">
+        <caption align="bottom">
+            <strong>Table 5:</strong><br />A fixed width table, width = 500 pixels
+        </caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table border="1" cellpadding="10" width="500">
+        <caption align="bottom">
+            <strong>Table 6:</strong><br />Table width = 500 pixels, and first column has width = 250 pixels
+        </caption>
+        <tr>
+            <td width="250">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table border="1" cellpadding="10" width="60%">
+        <caption align="bottom">
+            <strong>Table 7:</strong><br />A variable width table, width = 60%
+        </caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table border="1" cellpadding="10" width="60%">
+        <caption align="bottom">
+            <strong>Table 8:</strong><br />Table width = 60%, and first column has width = 75%
+        </caption>
+        <tr>
+            <td width="75%">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table border="1" cellpadding="10" width="60%">
+        <caption align="bottom">
+            <strong>Table 9:</strong><br />Table width = 60%, and first column has a fixed width of 150 pixels
+        </caption>
+        <tr>
+            <td width="150">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+    </table>
+
+    <footer>
+        <p><a href="https://validator.w3.org/#validate_by_input" target="_blank">HTML Validator</a> | 
+        <a href="https://jigsaw.w3.org/css-validator/validator" target="_blank">CSS Validator</a></p>
+        <p>Last updated: October 12, 2024</p>
+    </footer>
+</body>
+
+</html>
+
+

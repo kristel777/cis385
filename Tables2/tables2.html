@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kristel Saraci">
+    <meta name="description" content="Tables 1">
+    <title>Tables 2 - Kristel Saraci</title>
+
+    <style>
+        .align-left {
+            text-align: left;
+        }
+
+        .align-center {
+            text-align: center;
+        }
+
+        .align-right {
+            text-align: right;
+        }
+
+        .valign-top {
+            vertical-align: top;
+        }
+
+        .valign-middle {
+            vertical-align: middle;
+        }
+
+        .valign-bottom {
+            vertical-align: bottom;
+        }
+
+        table {
+            width: 500px;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px; 
+            border: 1px solid black; 
+        }
+
+        table.layout {
+            width: 95%;
+        }
+
+        caption {
+            caption-side: bottom;
+            text-align: center;
+            padding-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: #0056b3; text-align: center;">Tables2 - Kristel Saraci</h1>
+    <a style="background-color: #e6e6e6; padding: 15px; border-radius: 8px;" href="index.html"> Back to main page</a>
+    <ol style="background-color: #e6e6e6; padding: 15px; border-radius: 8px;">
+        <li><a href="https://www.cuny.edu" style="color: #0056b3;">City University of New York</a></li>
+        <li><a href="https://www.bmcc.cuny.edu" style="color: #0056b3;">Borough of Manhattan Community College</a></li>
+        <li><a href="https://www.citytech.cuny.edu/" style="color: #0056b3;">City Tech</a></li>
+    </ol>
+
+    <ul style="background-color: #e6e6e6; padding: 15px; border-radius: 8px;">
+        <li><a href="https://www.wsj.com/" style="color: #0056b3;">The Wall Street Journal</a></li>
+        <li><a href="https://www.yahoo.com/author/yahoo--finance/" style="color: #0056b3;">Yahoo Finance</a></li>
+    </ul>
+
+    <p>This lab exercise continues Lab #2: Tables. This lab exercise demonstrates how align, valign,
+        colspan and rowspan work in HTML tables. The first 3 tables demonstrate how content is aligned
+        horizontally (left, center, right) and vertically (top, middle, bottom) in table cells. Table 4
+        demonstrates the use of colspan and rowspan to merge cells. Table 5 demonstrates how tables can
+        be used to create a "skeleton" for a web page's layout. </p>
+
+    <div>&nbsp;</div>
+
+    <table>
+        <caption>
+            <strong>Table 2-1:</strong><br />A simple 5x5 table with cellpadding = 10 and width = 500.
+            Expanding the width of the table allows you to see the default left alignment in the table cells
+        </caption>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+\    <table>
+        <caption>
+            <strong>Table 2-2:</strong><br />Adding content to cells 1 and 6 allows you to see the default middle
+            vertical alignment
+        </caption>
+        <tr>
+            <td>1<br />2<br />3 <br />4<br />5<br />6 <br />7<br />8<br />9 <br />10</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td><img src="giraffe.jpeg" width="107" height="148" alt="3 giraffes"></td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table>
+        <caption>
+            <strong>Table 3-3:</strong><br /> Demonstrating the use of the align and valign attributes
+        </caption>
+        <tr>
+            <td>1<br />2<br />3 <br />4<br />5<br />6 <br />7<br />8<br />9 <br />10</td>
+            <td class="valign-middle">Default&nbsp;vertical&nbsp;alignment&nbsp;=&nbsp;middle; no&nbsp;valign&nbsp;attribute&nbsp;used&nbsp;in&nbsp;this&nbsp;cell.</td>
+            <td class="valign-top">3 valign="top"</td>
+            <td class="valign-bottom">4 valign="bottom"</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td><img src="giraffe.jpeg" width="107" height="148" alt="3 giraffes"></td>
+            <td class="align-left">7<br /> Default alignment=left;</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td class="align-center">12<br />align="center"</td>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td class="align-right">17<br />align="right"</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table>
+        <caption>
+            <strong>Table 2-4:</strong><br />Demonstrating the use of the colspan and rowspan attributes
+        </caption>
+        <tr>
+            <td colspan="3">1 colspan="3"</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td rowspan="4">6<br />rowspan="4"</td>
+            <td>7</td>
+            <td>8</td>
+            <td colspan="2" rowspan="3">9<br />colspan="2" and rowspan="3"<br />merge cells in 2 directions</td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <div>&nbsp;</div>
+
+    <table class="layout">
+        <caption>
+            <strong>Table 2-5: </strong><br /> Demonstrating the use of colspan and rowspan to create a web page layout structure.<br>
+            Normally, you'd have border=0; the border is made visible here for demonstration purposes only.
+        </caption>
+        <tr>
+            <td class="align-center" colspan="4">
+                <h1>This is the Header</h1>
+            </td>
+        </tr>
+        <tr>
+            <td class="valign-top" rowspan="2">
+                <h2>L Nav Bar</h2>
+                <ul>
+                    <li>link 1</li>
+                    <li>link 2</li>
+                    <li>link 3</li>
+                    <li>link 4</li>
+                    <li>link 5</li>
+                </ul>
+            </td>
+            <td>Main content cell 1</td>
+            <td>Main content cell 2</td>
+            <td class="valign-top" rowspan="2">
+                <h2>R Nav Bar</h2>
+                <ul>
+                    <li>link 6</li>
+                    <li>link 7</li>
+                    <li>link 8</li>
+                    <li>link 9</li>
+                    <li>link 10</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Main content cell 3</td>
+            <td>Main content cell 4</td>
+        </tr>
+        <tr>
+            <td class="align-center" colspan="4">
+                <p>This is the footer, where you'd have your "Thanks, Cruzio" statement, links to the validators and your "Last updated" statement.</p>
+            </td>
+        </tr>
+    </table>
+
+    <footer>
+        <p><a href="https://validator.w3.org/#validate_by_input" target="_blank">HTML Validator</a> | 
+        <a href="https://jigsaw.w3.org/css-validator/validator" target="_blank">CSS Validator</a></p>
+        <p>Last updated: October 12, 2024</p>
+    </footer>
+
+</body>
+
+</html>

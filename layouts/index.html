@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>City Layouts - Index Page</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            html, body {
+                height: 100%;
+                width: 100%;
+                font-family: Arial, sans-serif;
+            }
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            header {
+                background-color: rgb(251, 208, 241);
+                color: rgb(9, 1, 1);
+                text-align: center;
+                padding: 15px;
+                width: 100%;
+            }
+            nav {
+                margin: 20px;
+                text-align: center;
+            }
+            section {
+                flex: 1;
+                margin: 20px;
+                padding: 20px;
+                border: 1px solid #ddd;
+                background-color: #f9f9f9;
+                width: calc(100% - 80px); /* Adjusting to fit within page margins */
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            li {
+                margin: 5px 0;
+            }
+            a {
+                text-decoration: none;
+                color: rgb(0, 0, 8);
+                font-size: 16px;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            footer {
+                background-color: rgb(246, 190, 232);
+                color: rgb(2, 0, 0);
+                text-align: center;
+                padding: 5px;
+                width: 100%;
+            }
+            @media screen and (max-width: 768px) {
+                #nav, #content, #image-section {
+                    width: 100%; /* Full-width stacking for small screens */
+                    text-align: center;
+                }
+                section {
+                    width: calc(100% - 40px); /* Adjusting for mobile devices */
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>CITY LAYOUTS INDEX</h1>
+        </header>
+
+        <nav>
+            <h2>CHOOSE A LAYOUT FOR EACH CITY</h2>
+        </nav>
+
+        <section>
+            <h3>London</h3>
+            <ul>
+                <li><a href="layout_table_london.html" target="_blank">Table Layout</a></li>
+                <li><a href="layout_div_london.html" target="_blank">DIV Layout</a></li>
+                <li><a href="layout_html5_london.html" target="_blank">HTML5 Layout</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Paris</h3>
+            <ul>
+                <li><a href="layout_table_paris.html" target="_blank">Table Layout</a></li>
+                <li><a href="layout_div_paris.html" target="_blank">DIV Layout</a></li>
+                <li><a href="layout_html5_paris.html" target="_blank">HTML5 Layout</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Tokyo</h3>
+            <ul>
+                <li><a href="layout_table_tokyo.html" target="_blank">Table Layout</a></li>
+                <li><a href="layout_div_tokyo.html" target="_blank">DIV Layout</a></li>
+                <li><a href="layout_html5_tokyo.html" target="_blank">HTML5 Layout</a></li>
+            </ul>
+        </section>
+        
+        <footer>
+          <p>Kristel Saraci, September 2024.</p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DIV Layout - London</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale = 0.1">
+        <meta name="author" content="=Kristel Saraci">
+        <meta name="description" content ="HTML DIV layout-City Gallery, London">
+        <style>
+            html, body {
+                margin: 0;
+                height: 100%;
+                width: 100%;
+                font-family: Arial, sans-serif;
+            }
+            #header, #footer {
+                background-color: rgb(250, 212, 238);
+                color: rgb(1, 0, 0);
+                text-align: center;
+                padding: 20px;
+                width: 100%;
+            }
+            #footer {
+                background-color: rgb(246, 190, 232);
+            }
+            #main {
+                display: flex;
+                height: calc(100% - 160px); 
+                padding: 20px;
+                box-sizing: border-box;
+            }
+            #nav {
+                background-color: #eeeeee;
+                width: 15%;
+                padding: 10px;
+                box-sizing: border-box;
+                font-size: 0.9em;
+            }
+            #content {
+                width: 60%;
+                padding: 20px;
+                text-align: justify;
+                box-sizing: border-box;
+                overflow: auto;
+            }
+            #image-section {
+                width: 50%;
+                padding: 25px;
+                text-align: center;
+                box-sizing: border-box;
+            }
+            #image-section img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>City Gallery</h1>
+            <h2>London</h2>
+        </div>
+
+        <div id="main">
+            <div id="nav">
+                <h2><a href="index.html">Main</a></h2>
+                <h2><a href="layout_div_paris.html">DIV Layout - Paris</a></h2>
+                <h2><a href="layout_div_tokyo.html">DIV Layout - Tokyo</a></h2>
+            </div>
+
+            <div id="content">
+                <h3>London</h3>
+                <p>London is the capital and largest city of both England and the United Kingdom, with a population of 8,866,180 in 2022. The wider metropolitan area is the largest in Western Europe, with a population of 14.9 million. London stands on the River Thames in southeast England, at the head of a 50-mile (80 km) estuary down to the North Sea, and has been a major settlement for nearly 2,000 years. Its ancient core and financial centre, the City of London, was founded by the Romans as Londinium and has retained its medieval boundaries. The City of Westminster, to the west of the City of London, has been the centuries-long host of the national government and parliament. London grew rapidly in the 19th century, becoming the world's largest city at the time. Since the 19th century, the name "London" has referred to the metropolis around the City of London, historically split between the counties of Middlesex, Essex, Surrey, Kent, and Hertfordshire, which since 1965 has largely comprised the administrative area of Greater London, governed by 33 local authorities and the Greater London AuthorityAs one of the world's major global cities,London exerts a strong influence on world art, entertainment, fashion, commerce, finance, education, healthcare, media, science, technology, tourism, transport, and communications. Despite a post-Brexit exodus of stock listings from the London Stock Exchange, London remains Europe's most economically powerful city and one of the world's major financial centres.</p>
+            </div>
+
+            <div id="image-section">
+                <img src="Picture_of_london.jpeg" alt="Image of London"/>
+            </div>
+        </div>
+
+        <div id="footer">
+            Kristel Saraci, September 2024.
+        </div>
+    </body>
+</html>
+
